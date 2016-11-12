@@ -1,0 +1,13 @@
+---- OPCODE_TYPE_QRY_RSP Matches (3 in 2 files) ----
+Udp_server.c (cust\network):	resplen=XLite_Packet_Build(pPacketHeader,OPCODE_TYPE_QRY_RSP,ERRCODE_SUCCESS,ENCRYPT_MODE_PLAINTEXT,msg.length,packet+IOT_XLITE_HEADER_LEN,IOT_RESPONSE);
+Udp_server.c (cust\network):	resplen=XLite_Packet_Build(pPacketHeader,OPCODE_TYPE_QRY_RSP,ERRCODE_SUCCESS,ENCRYPT_MODE_BASE64,msg.length,packet+IOT_XLITE_HEADER_LEN,IOT_RESPONSE);
+Xlite.h (cust\network):#define  OPCODE_TYPE_QRY_RSP 		201
+---- send_deviceInfo Matches (4 in 3 files) ----
+Udp_client.c (cust\network):				send_deviceInfo();
+Udp_server.c (cust\network):void send_deviceInfo() 
+Udp_server.c (cust\network):			send_deviceInfo();
+Udp_server.h (cust\network):void send_deviceInfo() XIP_ATTRIBUTE(".xipsec0");
+---- udp_broadcast_send Matches (3 in 3 files) ----
+Iot_udp_app.c (cust\tcpip):		udp_broadcast_send();
+Udp_server.c (cust\network):void udp_broadcast_send()
+Udp_server.h (cust\network):void udp_broadcast_send() XIP_ATTRIBUTE(".xipsec0");
