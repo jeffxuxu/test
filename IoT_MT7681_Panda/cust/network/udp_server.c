@@ -77,7 +77,7 @@ void send_deviceInfo()
 	PUCHAR packet;
 	packet=(PUCHAR)malloc((IOT_XLITE_HEADER_LEN+MAX_CMD_LEN)*sizeof(UCHAR));
 	memset(packet,0,(IOT_XLITE_HEADER_LEN+MAX_CMD_LEN)*sizeof(UCHAR));	
-
+    
 	pmsg=&msg;
 	xJSON_InitObject(pmsg,packet+IOT_XLITE_HEADER_LEN);
 		xJSON_ObjectStart(pmsg,KEY_INFO,0);
